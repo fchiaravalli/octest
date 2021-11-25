@@ -9,4 +9,4 @@ RUN yum install -y nc && \
     
 USER 1001
 
-CMD top
+CMD ping localhost
