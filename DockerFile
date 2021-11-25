@@ -5,7 +5,7 @@ USER root
 RUN yum install -y nc && \
     yum install -y bind-utils && \
     yum install -y iputils && \
-    echo -e "CRISTO\nCRISTO" | passwd root && \
+    yum install -y net-tools && \
     yum -y clean all --enablerepo='*'
     
 USER 1001
