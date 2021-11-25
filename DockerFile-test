@@ -1,0 +1,19 @@
+FROM quay.io/centos7/nodejs-12-centos7
+
+USER root
+
+RUN yum install nc 
+
+USER 1000610000
+
+COPY 
+
+RUN npm install -g @vue/cli \
+    npm install -g @vue/cli-init \
+    npm i keycloak-js --save \
+    npm i vuejs-logger --save \
+    app-vue \
+    npm install \
+    
+
+ npm run dev
