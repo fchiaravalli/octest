@@ -3,7 +3,8 @@ FROM quay.io/centos7/s2i-core-centos7
 USER root
 
 RUN yum install -y nc && \
-    yum install -y top && \
+    yum install -y bind-utils && \
+    yum install -y ip-utils && \
     yum -y clean all --enablerepo='*'
     
 USER 1001
